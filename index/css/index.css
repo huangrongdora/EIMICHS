@@ -1,0 +1,577 @@
+main {
+    margin-bottom: 140px;
+    width: 100%;
+    clear: both;
+}
+
+.carousel {
+    /* 轮播图框设置*/
+    position: relative;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.carosel ul {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.carosel ul li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    list-style: none;
+    background-color: #ccc;
+}
+
+.carosel li.active {
+    background-color: purple;
+}
+
+.carousel_txt {
+    /*轮播图文字box设置*/
+    width: 260px;
+    position: absolute;
+    top: 30%;
+    right: 24%;
+    border: 1px solid #fff;
+    padding: 30px 0 30px 22px;
+}
+
+.rimg {
+    left: 100%;
+}
+
+.limg {
+    left: -100%;
+}
+
+.carousel_txt p {
+    color: #fff;
+}
+
+/*轮播图文字box设置*/
+
+.carousel_txt p:nth-of-type(1) {
+    display: inline-block;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+}
+
+.carousel_txt p:nth-of-type(2) {
+    font-size: 30px;
+    line-height: 84px;
+    width: 400px;
+    background-color: transparent;
+}
+
+.carousel_txt p:nth-of-type(3) {
+    width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    word-break: break-all;
+    background-color: transparent;
+}
+
+/************************关于我们部分设置**************/
+
+.about_us {
+    /*版心设置* */
+    width: 1200px;
+    overflow: hidden;
+    padding: 70px 0 50px 0;
+}
+
+.about_us_title {
+    width: 1200px;
+    margin-bottom: 38px;
+}
+
+.bdl {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #666;
+    border-right: transparent;
+    border-bottom: transparent;
+    position: absolute;
+    top: 0;
+    left: -16px;
+}
+
+.bdr {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #666;
+    border-left: transparent;
+    border-top: transparent;
+    position: absolute;
+    bottom: -12px;
+    left: 92px;
+}
+
+.about_us_title h3 {
+    margin-left: 20%;
+    font-size: 12px;
+    color: #676767;
+    line-height: 24px;
+}
+
+.about_us_title h2 {
+    position: relative;
+    margin-left: 20%;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.about_us_lft {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 0 22px 0 0;
+    float: left;
+}
+
+.about_us_lft p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    text-indent: 2em;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+.about_us_lft a {
+    display: block;
+    color: red;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+
+.reading {
+    /* reading链接 */
+    position: relative;
+    padding: 15px 0;
+}
+
+.about_us_lft a::before {
+    /* reading前面竖线*/
+    position: absolute;
+    left: 40%;
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #666;
+}
+
+.about_us_lft a::after {
+    /* reading后面竖线*/
+    position: absolute;
+    right: 40%;
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #666;
+}
+
+.over {
+    /* reading上面的竖线*/
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 42%;
+    background-color: #666;
+}
+
+.down {
+    /* reading下面的竖线*/
+    width: 30px;
+    position: absolute;
+    bottom: 12px;
+    left: 42%;
+    background-color: #666;
+}
+
+.line {
+    /*关于我们div的横线*/
+    position: absolute;
+    bottom: 0;
+    width: 170px;
+    background-color: #666;
+}
+
+/* 关于我们右边的图片设置*/
+
+.about_us_rit {
+    position: relative;
+    width: 480px;
+    border: 2px solid gray;
+    float: left;
+    height: 100%;
+}
+
+.about_us_rit .img img {
+    /* 设置图片格式 */
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    transform: translate(50px, -50px);
+    transition: all 1s;
+}
+
+.about_us_rit .img:hover img {
+    /* 设置图片hover效果 */
+    transform: translate(0, 0);
+}
+
+.about_us_rit .img .shadow {
+    /*设置图片阴影效果 */
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    background-color: #999;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.about_us_rit .img:hover .shadow {
+    /*设置图片阴影hover效果 */
+    transform: translate(-50px, 50px);
+}
+
+/* 产品展示部分设置 */
+
+.product_display_box {
+    width: 100%;
+    background-color: rgba(241, 241, 241, .5);
+}
+
+.center {
+    /* 题目文字居中 */
+    text-align: center;
+    padding: 38px 0 50px 0;
+}
+
+.center h2 {
+    position: relative;
+    font-size: 22px;
+    color: black;
+    /* line-height: 36px; */
+}
+
+.center h3 {
+    font-size: 14px;
+    color: black;
+    line-height: 36px;
+}
+
+.bdlft, .bdrit {
+    /* 题目文字的左右线框 */
+    width: 20px;
+    height: 20px;
+    border: 1px solid #666;
+    border-right: transparent;
+    border-bottom: transparent;
+    position: absolute;
+    top: 0;
+    left: 46%;
+}
+
+.bdrit {
+    /* 题目文字的左右线框 */
+    width: 20px;
+    height: 20px;
+    border: 1px solid #666;
+    border-left: transparent;
+    border-top: transparent;
+    position: absolute;
+    bottom: -12px;
+    top: 10px;
+    left: 53%;
+}
+
+.product_display {
+    /*设置版心宽度，高度有内容撑开  */
+    width: 1200px;
+}
+
+.display-item-box {
+    /* 包含img 的内容盒子 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.display-item-box>div {
+    /* 设置每个小div盒子的样式*/
+    width: 580px;
+    border: 2px solid gray;
+    margin-bottom: 24px;
+    padding: 4px 34px 4px 3px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.display-item1 {
+    overflow: hidden;
+}
+
+.display-item1 .rectangle {
+    position: absolute;
+    top: 40%;
+    right: -35px;
+    width: 35px;
+    height: 28px;
+    padding: 0;
+    margin: 0;
+    background-color: #666;
+}
+
+.display-item1 img {
+    display: inline-block;
+    width: 292px;
+}
+
+.display-item1 div {
+    position: relative;
+    float: right;
+    width: 216px;
+    margin: 40px 0 40px 30px;
+    border-right: 1px solid gray;
+}
+
+.display-item1-title {
+    display: inline-block;
+    font-size: 18px;
+    color: #666;
+    border-bottom: 1px solid gray;
+    padding-bottom: 6px;
+}
+
+.display-item1-title:hover {
+    color: #e3635a;
+}
+
+.display-item1-title+p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #7f7f7f;
+    margin: 16px 0;
+}
+
+.display-item2 div {
+    /*下排内容块*/
+    display: inline-block;
+    width: 216px;
+    margin: 40px 0 40px 30px;
+    border-right: 1px solid gray;
+}
+
+.display-item2 img {
+    /*下排img块设置*/
+    float: right;
+    width: 292px;
+}
+
+h3.active {
+    /* 导航鼠标悬停 */
+    color: #e3635a;
+}
+
+.d-reading {
+    /*reading父div的设置*/
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.d-reading a {
+    /*reading字体的设置*/
+    position: relative;
+    padding: 0 30px;
+}
+
+.d-reading a::before {
+    /*reading上面的横线 */
+    position: absolute;
+    top: -4px;
+    right: 6px;
+    content: "";
+    width: 34px;
+    height: 1px;
+    background-color: #333;
+}
+
+.d-reading a::after {
+    /* reading下面的横线 */
+    position: absolute;
+    bottom: -4px;
+    left: 6px;
+    content: "";
+    width: 34px;
+    height: 1px;
+    background-color: #333;
+}
+
+/* 设计团队 */
+
+.design-box {
+    background-color: #fff;
+    width: 100%;
+}
+
+.design-team {
+    /*团队建设的盒子*/
+    width: 1200px;
+    display: flex;
+    text-align: center;
+}
+
+.design-team-item {
+    /*个人盒子设计*/
+    width: 242px;
+    float: left;
+}
+
+.design-team-item img {
+    /*团队设计的个人照片*/
+    width: 242px;
+    height: 334px;
+    vertical-align: middle；
+}
+
+.design-team-item h3 {
+    /*团队设计的姓名*/
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    line-height: 32px;
+    margin: 10px 0px;
+    border-bottom: 1px solid black;
+}
+
+.design-team-item p {
+    /*团队设计的个人介绍*/
+    text-align: left;
+    padding: 0 12px 40px 6px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+}
+
+/* 背景图设计 */
+
+.eimich {
+    width: 100%;
+    position: relative;
+}
+
+.eimich img {
+    width: 100%;
+}
+
+.eimich-title {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    top: 18px;
+}
+
+.eimich-txt {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    top: 44px;
+}
+
+/* 新闻动态 */
+
+.news-trends-box {
+    width: 100%;
+    color: #fff;
+}
+
+.news-trends {
+    /*新闻动态版心 */
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-trends-item {
+    /*新闻动态小模块设置 */
+    width: 580px;
+    flex-shrink: 0;
+    margin-bottom: 44px;
+}
+
+.news-trends-title {
+    /* 新闻动态左边标题设置 */
+    width: 90px;
+    border: 2px solid #666;
+    line-height: 44px;
+    text-align: center;
+    float: left;
+}
+
+.news-trends-title h4 {
+    font-size: 14px;
+    text-align: center;
+}
+
+.year {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    background-color: #666;
+}
+
+.news-trends-txt {
+    /*新闻动态右边盒子里的文字*/
+    width: 490px;
+    padding-left: 8px;
+    float: right;
+}
+
+.news-trends-txt h4 {
+    /*新闻动态的标题设置*/
+    font-size: 18px;
+    color: rgb(26, 25, 25);
+}
+
+.news-trends-txt p {
+    /*新闻动态的文字内容设置*/
+    font-size: 14px;
+    line-height: 22px;
+    color: #676767;
+}
+
+h4.active {
+    color: #f96855;
+}

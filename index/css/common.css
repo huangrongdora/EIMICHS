@@ -1,0 +1,51 @@
+header{
+    width:100%;
+    overflow: hidden;
+} /*网页头部通栏 */
+.head{
+    width:1200px;
+    vertical-align: middle;
+    overflow: hidden;
+}/*网页头部版心 */
+.head_logo{
+    float:left;
+    padding:30px 0 30px 0;
+}/*网页头部版心里面的logo */
+header h2{
+    width:100px;
+    font-size:16px;
+    font-weight:600;
+    text-align: center;
+}/*网页头部版心里面的logo字体设置 */
+.head_logo+div{
+    float: right;
+    padding:30px 0 30px 0;
+}/*网页头部版心里面的导航栏 */
+.head_logo+div a{
+    display: inline-block;
+    font-size:18px;
+    text-align: center;
+    margin-left:48px;
+}/*网页头部版心里面的导航栏的li设置*/
+a.active{
+    border-bottom:2px solid #fc7863;
+    color:#fc7863;
+}
+header a:hover{
+    border-bottom:2px solid #fc7863;
+    color:#fc7863;
+}/*网页头部版心的鼠标悬停效果*/
+
+
+/*网页尾部 */
+footer{
+    line-height: 70px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    background-color: #666;
+    color:#fff;   
+    font-size:14px;
+    text-align: center;
+}
